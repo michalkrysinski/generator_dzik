@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:name_generator_dzik/app/home/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,27 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Scaffold(
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const CircleAvatar(
-                backgroundImage: AssetImage('images/dzik.webp'),
-                radius: 140,
-              ),
-              Text(
-                'DZIK',
-                style: GoogleFonts.lato(fontSize: 35),
-              ),
-              Text(
-                'GENERATOR IMION',
-                style: GoogleFonts.lato(fontSize: 25),
-              ),
-            ],
-          ),
-        ),
-      ),
+      home: const HomePage(),
     );
   }
 }
