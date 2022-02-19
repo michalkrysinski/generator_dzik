@@ -24,7 +24,7 @@ class DrawPage extends StatelessWidget {
               onTap: () {
                 Navigator.of(context).push(
                   MaterialPageRoute(
-                    builder: (context) => const ResultPage(),
+                    builder: (context) => const RandomWords(),
                   ),
                 );
               },
@@ -33,7 +33,7 @@ class DrawPage extends StatelessWidget {
                 padding: const EdgeInsets.all(30),
                 margin: const EdgeInsets.all(30),
                 child: Text(
-                  'Losuj imię',
+                  'Losuj',
                   style: GoogleFonts.mali(fontSize: 35),
                 ),
               ),

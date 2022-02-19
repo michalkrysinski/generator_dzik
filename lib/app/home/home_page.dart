@@ -23,7 +23,7 @@ class _HomePageState extends State<HomePage> {
             return const Text('Więcej o aplikacji');
           }
 
-          return const Text('DZIK GENERATOR IMION');
+          return const Text('DZIK GENERATOR');
         }),
         backgroundColor: const Color.fromARGB(255, 11, 139, 69),
       ),
@@ -45,7 +45,7 @@ class _HomePageState extends State<HomePage> {
         items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
-            label: 'Generowanie imion',
+            label: 'Generowanie',
           ),
           BottomNavigationBarItem(
               icon: Icon(Icons.more_horiz), label: 'Więcej o aplikacji'),
