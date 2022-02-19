@@ -23,11 +23,11 @@ class _HomePageState extends State<HomePage> {
             return const Text('Więcej o aplikacji');
           }
 
-          return const Text('DZIK generator imion');
+          return const Text('DZIK GENERATOR IMION');
         }),
-        backgroundColor: const Color.fromARGB(255, 17, 202, 248),
+        backgroundColor: const Color.fromARGB(255, 11, 139, 69),
       ),
-      backgroundColor: const Color.fromARGB(255, 191, 242, 255),
+      backgroundColor: const Color.fromARGB(255, 254, 255, 255),
       body: Builder(builder: (context) {
         if (currentIndex == 1) {
           return const InformationPageContent();

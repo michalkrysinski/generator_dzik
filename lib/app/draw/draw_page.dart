@@ -13,18 +13,14 @@ class DrawPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('DZIK LOSOWANIE'),
-        backgroundColor: Colors.green,
+        backgroundColor: const Color.fromARGB(255, 11, 139, 69),
       ),
-      backgroundColor: const Color.fromARGB(255, 201, 252, 160),
+      backgroundColor: const Color.fromARGB(255, 160, 245, 174),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const CircleAvatar(
-              backgroundImage: AssetImage('images/losowanie.jpg'),
-              radius: 130,
-            ),
-            const SizedBox(height: 40),
+            const SizedBox(height: 180),
             InkWell(
               onTap: () {
                 Navigator.of(context).push(
@@ -35,10 +31,10 @@ class DrawPage extends StatelessWidget {
               },
               child: Container(
                 color: const Color.fromARGB(255, 130, 255, 92),
-                padding: const EdgeInsets.all(10),
+                padding: const EdgeInsets.all(30),
                 margin: const EdgeInsets.all(30),
                 child: Text(
-                  'losuj imię',
+                  'Losuj imię',
                   style: GoogleFonts.mali(fontSize: 35),
                 ),
               ),

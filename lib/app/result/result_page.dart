@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:name_generator_dzik/app/home/home_page.dart';
 
 class ResultPage extends StatelessWidget {
   const ResultPage({
@@ -24,16 +23,16 @@ class ResultPage extends StatelessWidget {
               'Wynik losowania to:',
               style: GoogleFonts.mali(fontSize: 35),
             ),
-            const SizedBox(height: 10),
+            const SizedBox(height: 450),
             ElevatedButton(
-              child: const Text('Wróć do strony głównej'),
+              child: const Text('Wróć'),
               style: ElevatedButton.styleFrom(
                 primary: const Color.fromARGB(255, 243, 12, 81),
               ),
               onPressed: () {
-                Navigator.of(context).push(
+                Navigator.of(context).pop(
                   MaterialPageRoute(
-                    builder: (_) => const HomePage(),
+                    builder: (_) => const ResultPage(),
                   ),
                 );
               },
