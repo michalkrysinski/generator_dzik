@@ -19,7 +19,7 @@ class DrawPage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const SizedBox(height: 180),
+            const SizedBox(height: 100),
             InkWell(
               onTap: () {
                 Navigator.of(context).push(
