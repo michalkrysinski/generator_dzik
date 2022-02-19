@@ -8,18 +8,14 @@ class InformationPageContent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: const [
-          TextField(),
-          Text('Pięć'),
-          Text('Pięć'),
-          Text('Pięć'),
-          Text('Pięć'),
-          Text('Pięć'),
-          Text('Pięć'),
-          Text('Pięć'),
-          Text('Pięć'),
+      child: ListView(
+        children: [
+          Container(
+            color: const Color.fromARGB(255, 178, 215, 255),
+            padding: const EdgeInsets.all(20),
+            margin: const EdgeInsets.all(10),
+            child: const Text('Tutaj rozpiszę się na temat aplikacji.'),
+          )
         ],
       ),
     );
