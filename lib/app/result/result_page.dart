@@ -23,20 +23,7 @@ class ResultPage extends StatelessWidget {
               'Wynik losowania to:',
               style: GoogleFonts.mali(fontSize: 35),
             ),
-            const SizedBox(height: 450),
-            ElevatedButton(
-              child: const Text('Wróć'),
-              style: ElevatedButton.styleFrom(
-                primary: const Color.fromARGB(255, 243, 12, 81),
-              ),
-              onPressed: () {
-                Navigator.of(context).pop(
-                  MaterialPageRoute(
-                    builder: (_) => const ResultPage(),
-                  ),
-                );
-              },
-            ),
+            const SizedBox(height: 250),
           ],
         ),
       ),

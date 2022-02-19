@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:name_generator_dzik/app/home/home_page.dart';
 import 'package:name_generator_dzik/app/result/result_page.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class DrawPage extends StatelessWidget {
   const DrawPage({
@@ -39,18 +38,7 @@ class DrawPage extends StatelessWidget {
                 ),
               ),
             ),
-            const SizedBox(height: 140),
-            ElevatedButton(
-              child: const Text('Wróć'),
-              style: ElevatedButton.styleFrom(primary: Colors.green),
-              onPressed: () {
-                Navigator.of(context).pop(
-                  MaterialPageRoute(
-                    builder: (_) => const HomePage(),
-                  ),
-                );
-              },
-            ),
+            const SizedBox(height: 150),
           ],
         ),
       ),
