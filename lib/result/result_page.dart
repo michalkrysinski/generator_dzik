@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:name_generator_dzik/app/draw/draw_page.dart';
 
-class DrawPage extends StatelessWidget {
-  const DrawPage({
+class ResultPage extends StatelessWidget {
+  const ResultPage({
     Key? key,
   }) : super(key: key);
 
@@ -10,32 +11,29 @@ class DrawPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('DZIK LOSOWANIE'),
-        backgroundColor: Colors.green,
+        title: const Text('TWÓJ WYNIK'),
+        backgroundColor: const Color.fromARGB(255, 243, 12, 81),
       ),
-      backgroundColor: const Color.fromARGB(255, 201, 252, 160),
+      backgroundColor: const Color.fromARGB(255, 255, 119, 119),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const CircleAvatar(
-              backgroundImage: AssetImage('images/losowanie.jpg'),
-              radius: 130,
+              backgroundImage: AssetImage('images/wynik.jpg'),
+              radius: 160,
             ),
             const SizedBox(height: 90),
             Text(
-              'losuj imię',
+              'Wynik losowania to:',
               style: GoogleFonts.lato(fontSize: 35),
             ),
             const SizedBox(height: 10),
             ElevatedButton(
-              style: ElevatedButton.styleFrom(primary: Colors.green),
-              child: const Text('Lsosuj imię'),
-              onPressed: () {},
-            ),
-            ElevatedButton(
-              child: const Text('Wróć'),
-              style: ElevatedButton.styleFrom(primary: Colors.green),
+              child: const Text('imię'),
+              style: ElevatedButton.styleFrom(
+                primary: const Color.fromARGB(255, 243, 12, 81),
+              ),
               onPressed: () {
                 Navigator.of(context).pop(
                   MaterialPageRoute(
