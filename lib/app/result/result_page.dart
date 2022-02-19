@@ -19,17 +19,26 @@ class _ResultWordsState extends State<RandomWords> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('TWÓJ WYNIK'),
-        backgroundColor: const Color.fromARGB(255, 243, 12, 81),
+        backgroundColor: const Color.fromARGB(255, 84, 93, 214),
       ),
-      backgroundColor: const Color.fromARGB(255, 255, 119, 119),
+      backgroundColor: const Color.fromARGB(255, 255, 255, 255),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             const SizedBox(height: 250),
-            Text(
-              wordPair.asPascalCase,
-              style: GoogleFonts.mali(fontSize: 45),
+            InkWell(
+              onTap: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => const RandomWords(),
+                  ),
+                );
+              },
+              child: Text(
+                wordPair.asPascalCase,
+                style: GoogleFonts.mali(fontSize: 45),
+              ),
             ),
           ],
         ),
