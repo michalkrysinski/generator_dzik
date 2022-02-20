@@ -37,7 +37,7 @@ class _ResultWordsState extends State<RandomWords> {
               },
               child: Text(
                 wordPair.asPascalCase,
-                style: GoogleFonts.mali(fontSize: 45),
+                style: GoogleFonts.mali(fontSize: 55),
               ),
             ),
           ],
