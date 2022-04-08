@@ -1,6 +1,8 @@
 import 'package:english_words/english_words.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:name_generator_dzik/app/draw/draw_page.dart';
+import 'package:name_generator_dzik/app/home/home_page.dart';
 
 class RandomWords extends StatefulWidget {
   const RandomWords({
@@ -19,7 +21,8 @@ class _ResultWordsState extends State<RandomWords> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('TWÓJ WYNIK'),
-        backgroundColor: const Color.fromARGB(255, 84, 93, 214),
+        centerTitle: true,
+        backgroundColor: const Color.fromARGB(255, 47, 0, 155),
       ),
       backgroundColor: const Color.fromARGB(255, 255, 255, 255),
       body: Center(
@@ -39,6 +42,29 @@ class _ResultWordsState extends State<RandomWords> {
                 wordPair.asPascalCase,
                 style: GoogleFonts.mali(fontSize: 55),
               ),
+            ),
+            const SizedBox(
+              height: 220,
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => const DrawPage(),
+                  ),
+                );
+              },
+              child: const Text('Wróć do losowanie'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => const HomePage(),
+                  ),
+                );
+              },
+              child: const Text('Wróć do strony głównej'),
             ),
           ],
         ),

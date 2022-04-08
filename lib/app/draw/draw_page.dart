@@ -11,10 +11,11 @@ class DrawPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('DZIK LOSOWANIE'),
-        backgroundColor: const Color.fromARGB(255, 11, 139, 69),
+        title: const Text('LOSOWANIE'),
+        centerTitle: true,
+        backgroundColor: const Color.fromARGB(255, 47, 0, 155),
       ),
-      backgroundColor: const Color.fromARGB(255, 160, 245, 174),
+      backgroundColor: const Color.fromARGB(255, 255, 255, 255),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -29,9 +30,20 @@ class DrawPage extends StatelessWidget {
                 );
               },
               child: Container(
-                color: const Color.fromARGB(255, 130, 255, 92),
-                padding: const EdgeInsets.all(30),
-                margin: const EdgeInsets.all(30),
+                padding: const EdgeInsets.all(
+                  20,
+                ),
+                margin: const EdgeInsets.all(
+                  12,
+                ),
+                decoration: BoxDecoration(
+                  color: const Color.fromARGB(255, 255, 255, 255),
+                  border: Border.all(
+                    color: const Color.fromARGB(255, 47, 0, 155),
+                    width: 2.0,
+                  ),
+                  borderRadius: BorderRadius.circular(25.0),
+                ),
                 child: Text(
                   'Losuj',
                   style: GoogleFonts.mali(fontSize: 35),

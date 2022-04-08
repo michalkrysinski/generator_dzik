@@ -7,64 +7,32 @@ class InformationPageContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: ListView(
-        children: [
-          Container(
-            color: const Color.fromARGB(255, 222, 225, 228),
-            padding: const EdgeInsets.all(1),
-            margin: const EdgeInsets.all(15),
-            child: const Expanded(
-              child: Text(
-                  'Aplikacja tworzona jest między 18.02.2022, a 20.02.2022. Służyć ma ona do generowania nazw. Pracuję nad nią w celu dodania sobie kolejnego elementu do mojego portfolio, aby zwiększyć swoje szanse w aplikowaniu do przyszłej pracy jako Junior Developer Fluttera. Aplikacja polega na tym, aby nacisnąć obrazek, a następnie "Losuj", w celu otrzymania wygenerowanej dla nas nazwy. Następnie przenosi nas do następnego ekranu, który pokazuje wynik losowania.'),
+    return Scaffold(
+      body: Center(
+        child: ListView(
+          children: [
+            Container(
+              padding: const EdgeInsets.all(
+                20,
+              ),
+              margin: const EdgeInsets.all(
+                12,
+              ),
+              decoration: BoxDecoration(
+                color: const Color.fromARGB(255, 255, 255, 255),
+                border: Border.all(
+                  color: const Color.fromARGB(255, 47, 0, 155),
+                  width: 2.0,
+                ),
+                borderRadius: BorderRadius.circular(25.0),
+              ),
+              child: const Expanded(
+                child: Text(
+                    'Aplikacja ma służyć do generowania nazw. Działanie jest proste. Żeby wygenerować słowo, należy nacisnąć obrazek, a następnie "Losuj", aby otrzymać jedno słowo z całej puli.  Następnie przenosi nas do następnego ekranu, który pokazuje wynik losowania.'),
+              ),
             ),
-          ),
-          Container(
-            color: const Color.fromARGB(255, 222, 225, 228),
-            padding: const EdgeInsets.all(1),
-            margin: const EdgeInsets.all(15),
-            child: const Expanded(
-              child: Text(
-                  'Aplikacja tworzona jest między 18.02.2022, a 20.02.2022. Służyć ma ona do generowania nazw. Pracuję nad nią w celu dodania sobie kolejnego elementu do mojego portfolio, aby zwiększyć swoje szanse w aplikowaniu do przyszłej pracy jako Junior Developer Fluttera. Aplikacja polega na tym, aby nacisnąć obrazek, a następnie "Losuj", w celu otrzymania wygenerowanej dla nas nazwy. Następnie przenosi nas do następnego ekranu, który pokazuje wynik losowania.'),
-            ),
-          ),
-          Container(
-            color: const Color.fromARGB(255, 222, 225, 228),
-            padding: const EdgeInsets.all(1),
-            margin: const EdgeInsets.all(15),
-            child: const Expanded(
-              child: Text(
-                  'Aplikacja tworzona jest między 18.02.2022, a 20.02.2022. Służyć ma ona do generowania nazw. Pracuję nad nią w celu dodania sobie kolejnego elementu do mojego portfolio, aby zwiększyć swoje szanse w aplikowaniu do przyszłej pracy jako Junior Developer Fluttera. Aplikacja polega na tym, aby nacisnąć obrazek, a następnie "Losuj", w celu otrzymania wygenerowanej dla nas nazwy. Następnie przenosi nas do następnego ekranu, który pokazuje wynik losowania.'),
-            ),
-          ),
-          Container(
-            color: const Color.fromARGB(255, 222, 225, 228),
-            padding: const EdgeInsets.all(1),
-            margin: const EdgeInsets.all(15),
-            child: const Expanded(
-              child: Text(
-                  'Aplikacja tworzona jest między 18.02.2022, a 20.02.2022. Służyć ma ona do generowania nazw. Pracuję nad nią w celu dodania sobie kolejnego elementu do mojego portfolio, aby zwiększyć swoje szanse w aplikowaniu do przyszłej pracy jako Junior Developer Fluttera. Aplikacja polega na tym, aby nacisnąć obrazek, a następnie "Losuj", w celu otrzymania wygenerowanej dla nas nazwy. Następnie przenosi nas do następnego ekranu, który pokazuje wynik losowania.'),
-            ),
-          ),
-          Container(
-            color: const Color.fromARGB(255, 222, 225, 228),
-            padding: const EdgeInsets.all(1),
-            margin: const EdgeInsets.all(15),
-            child: const Expanded(
-              child: Text(
-                  'Aplikacja tworzona jest między 18.02.2022, a 20.02.2022. Służyć ma ona do generowania nazw. Pracuję nad nią w celu dodania sobie kolejnego elementu do mojego portfolio, aby zwiększyć swoje szanse w aplikowaniu do przyszłej pracy jako Junior Developer Fluttera. Aplikacja polega na tym, aby nacisnąć obrazek, a następnie "Losuj", w celu otrzymania wygenerowanej dla nas nazwy. Następnie przenosi nas do następnego ekranu, który pokazuje wynik losowania.'),
-            ),
-          ),
-          Container(
-            color: const Color.fromARGB(255, 222, 225, 228),
-            padding: const EdgeInsets.all(1),
-            margin: const EdgeInsets.all(15),
-            child: const Expanded(
-              child: Text(
-                  'Aplikacja tworzona jest między 18.02.2022, a 20.02.2022. Służyć ma ona do generowania nazw. Pracuję nad nią w celu dodania sobie kolejnego elementu do mojego portfolio, aby zwiększyć swoje szanse w aplikowaniu do przyszłej pracy jako Junior Developer Fluttera. Aplikacja polega na tym, aby nacisnąć obrazek, a następnie "Losuj", w celu otrzymania wygenerowanej dla nas nazwy. Następnie przenosi nas do następnego ekranu, który pokazuje wynik losowania.'),
-            ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

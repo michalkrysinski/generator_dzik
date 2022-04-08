@@ -18,16 +18,17 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         title: Builder(builder: (context) {
           if (currentIndex == 1) {
             return const Text('Więcej o aplikacji');
           }
 
-          return const Text('DZIK GENERATOR');
+          return const Text('Generowanie');
         }),
-        backgroundColor: const Color.fromARGB(255, 11, 139, 69),
+        backgroundColor: const Color.fromARGB(255, 47, 0, 155),
       ),
-      backgroundColor: const Color.fromARGB(255, 254, 255, 255),
+      backgroundColor: const Color.fromARGB(255, 255, 255, 255),
       body: Builder(builder: (context) {
         if (currentIndex == 1) {
           return const InformationPageContent();
