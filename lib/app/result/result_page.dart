@@ -22,7 +22,7 @@ class _ResultWordsState extends State<RandomWords> {
       appBar: AppBar(
         title: const Text('TWÓJ WYNIK'),
         centerTitle: true,
-        backgroundColor: const Color.fromARGB(255, 47, 0, 155),
+        backgroundColor: const Color.fromARGB(255, 100, 50, 215),
       ),
       backgroundColor: const Color.fromARGB(255, 255, 255, 255),
       body: Center(
@@ -55,6 +55,13 @@ class _ResultWordsState extends State<RandomWords> {
                 );
               },
               child: const Text('Wróć do losowanie'),
+              style: ElevatedButton.styleFrom(
+                primary: const Color.fromARGB(255, 218, 206, 223),
+                onPrimary: const Color.fromARGB(255, 0, 0, 0),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(25),
+                ),
+              ),
             ),
             ElevatedButton(
               onPressed: () {
@@ -64,7 +71,16 @@ class _ResultWordsState extends State<RandomWords> {
                   ),
                 );
               },
-              child: const Text('Wróć do strony głównej'),
+              child: const Text(
+                'Wróć do strony głównej',
+              ),
+              style: ElevatedButton.styleFrom(
+                primary: const Color.fromARGB(255, 218, 206, 223),
+                onPrimary: const Color.fromARGB(255, 0, 0, 0),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(25),
+                ),
+              ),
             ),
           ],
         ),

@@ -21,14 +21,14 @@ class InformationPageContent extends StatelessWidget {
               decoration: BoxDecoration(
                 color: const Color.fromARGB(255, 255, 255, 255),
                 border: Border.all(
-                  color: const Color.fromARGB(255, 47, 0, 155),
+                  color: const Color.fromARGB(255, 170, 167, 179),
                   width: 2.0,
                 ),
                 borderRadius: BorderRadius.circular(25.0),
               ),
               child: const Expanded(
                 child: Text(
-                    'Aplikacja ma służyć do generowania nazw. Działanie jest proste. Żeby wygenerować słowo, należy nacisnąć obrazek, a następnie "Losuj", aby otrzymać jedno słowo z całej puli.  Następnie przenosi nas do następnego ekranu, który pokazuje wynik losowania.'),
+                    'Aplikacja służy do generowania nazw. Działanie jest proste. Żeby wygenerować słowo, należy nacisnąć obrazek, a następnie wybrać "Losuj", aby otrzymać jedno słowo z całej puli.  Następnie przenosi nas do następnego ekranu, który pokazuje wynik losowania.'),
               ),
             ),
           ],

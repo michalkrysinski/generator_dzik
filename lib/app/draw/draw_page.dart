@@ -13,7 +13,7 @@ class DrawPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('LOSOWANIE'),
         centerTitle: true,
-        backgroundColor: const Color.fromARGB(255, 47, 0, 155),
+        backgroundColor: const Color.fromARGB(255, 100, 50, 215),
       ),
       backgroundColor: const Color.fromARGB(255, 255, 255, 255),
       body: Center(
@@ -39,7 +39,7 @@ class DrawPage extends StatelessWidget {
                 decoration: BoxDecoration(
                   color: const Color.fromARGB(255, 255, 255, 255),
                   border: Border.all(
-                    color: const Color.fromARGB(255, 47, 0, 155),
+                    color: const Color.fromARGB(255, 170, 167, 179),
                     width: 2.0,
                   ),
                   borderRadius: BorderRadius.circular(25.0),

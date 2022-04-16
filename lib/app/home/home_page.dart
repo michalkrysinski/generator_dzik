@@ -26,7 +26,7 @@ class _HomePageState extends State<HomePage> {
 
           return const Text('Generowanie');
         }),
-        backgroundColor: const Color.fromARGB(255, 47, 0, 155),
+        backgroundColor: const Color.fromARGB(255, 100, 50, 215),
       ),
       backgroundColor: const Color.fromARGB(255, 255, 255, 255),
       body: Builder(builder: (context) {

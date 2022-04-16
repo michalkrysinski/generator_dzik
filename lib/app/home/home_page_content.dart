@@ -23,6 +23,7 @@ class HomePageContent extends StatelessWidget {
             child: const CircleAvatar(
               backgroundImage: AssetImage('images/losowanie.jpg'),
               radius: 180,
+              backgroundColor: Color.fromARGB(255, 255, 255, 255),
             ),
           ),
         ],
